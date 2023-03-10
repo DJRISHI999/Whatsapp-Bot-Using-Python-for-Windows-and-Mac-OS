@@ -8,8 +8,9 @@ from pynput.mouse import Controller, Button
 from time import sleep
 import mysql.connector as ms
 
-
-con = ms.connect(host = 'localhost',user = 'root', passwd = 'rishi@123', database = 'wpbot') 
+u  = input("Enter the user of MySQL")
+p = input("Enter the password of MySQL")
+con = ms.connect(host = localhost,user = u, passwd = p, database = 'wpbot') 
 # DON'T FORGET TO PUT ON YOUR PASSWORD 
 # DON'T FORGET TO ADD DATABASE WPBOT IN YOUR MYSQL INTERFACE
 if con.is_connected():
